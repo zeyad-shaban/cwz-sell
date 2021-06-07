@@ -18,4 +18,4 @@ app.get('*', (req, res) => res.sendFile(`${__dirname}/client/build/index.html`))
 
 app.use(require('./middlewares/error'));
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
