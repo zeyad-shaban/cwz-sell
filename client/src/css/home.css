@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+
+.card {
+    border: none
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 10px
+}
+
+.card-text {
+    font-size: 13px
+}
+
+.guarantee {
+    color: #05882c;
+    margin-left: 4px;
+    font-weight: 700
+}
+
+hr {
+    margin: 0.2rem 0;
+    color: #bfbebe
+}
+
+.buttons button {
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2px
+}
