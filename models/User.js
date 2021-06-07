@@ -31,7 +31,13 @@ userSchema.pre('save', async function (next) {
 
 
 userSchema.methods.genAuthToken = function () {
-    return jwt.sign(this.toJSON(), config.SECRET_KEY);
+    console.log('config.SECRET_KEY: ', this)
+    console.log('this: ', this)
+    console.log('this.toJSON(): ', this.toJSON())
+    const token = jwt.sign(this.toJSON(), config.SECRET_KEY)
+    console.log('token: ', token)
+    
+    return token;
 };
 
 userSchema.methods.checkPassword = function(password) {
